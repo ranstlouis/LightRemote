@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Light Remote</string>
+    <string name="y_on">ON</string>
+    <string name="led_remote" translatable="false">LED Remote</string>
+    <string name="y_off" translatable="false">OFF</string>
+    <string name="i_p_address" translatable="false">I.P. Address:</string>
+    <string name="yellow_led">Yellow LED</string>
+    <string name="g_off" tools:ignore="DuplicateDefinition" translatable="false">OFF</string>
+    <string name="g_on" tools:ignore="DuplicateDefinition" translatable="false">ON</string>
+    <string name="green_led">Green LED</string>
+</resources>

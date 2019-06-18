@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <Button
+            android:text="@string/g_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Green_on"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:textSize="36sp"
+            android:background="@android:color/holo_green_dark" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
+            app:layout_constraintHorizontal_bias="0.13" app:layout_constraintVertical_bias="0.336"/>
+    <EditText
+            android:background="@null"
+            android:layout_width="113dp"
+            android:layout_height="40dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/IP_label"
+            android:text="@string/i_p_address" android:layout_marginStart="64dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="64dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.173"/>
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="210dp"
+            android:layout_height="75dp"
+            app:layout_constraintStart_toEndOf="@+id/IP_label"
+            app:layout_constraintTop_toTopOf="@+id/IP_label"
+            app:layout_constraintBottom_toBottomOf="@+id/IP_label" app:layout_constraintVertical_bias="1.0"
+            android:id="@+id/textInputLayout">
+
+        <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:id="@+id/ip_address"/>
+    </android.support.design.widget.TextInputLayout>
+    <Button
+            android:text="@string/g_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Green_off" app:layout_constraintStart_toStartOf="@+id/Green_on"
+            app:layout_constraintEnd_toEndOf="@+id/Green_on" android:background="@android:color/darker_gray"
+            android:textSize="36sp" app:layout_constraintHorizontal_bias="0.0" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.445"/>
+    <EditText
+
+            android:background="@null"
+            android:layout_width="262dp"
+            android:layout_height="77dp"
+            android:inputType="textPersonName"
+            android:text="@string/led_remote"
+            android:ems="10"
+            android:id="@+id/Title"
+            android:textSize="36sp" android:singleLine="false" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
+            app:layout_constraintHorizontal_bias="0.496" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.0"
+            android:gravity="center"/>
+    <WebView
+            android:id="@+id/webview"
+            android:layout_width="357dp"
+            android:layout_height="17dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="1.0"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginRight="8dp"/>
+    <EditText
+            android:background="@null"
+            android:layout_width="146dp"
+            android:layout_height="60dp"
+            android:inputType="textPersonName"
+            android:text="@string/green_led"
+            android:ems="10"
+            android:id="@+id/Green"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.236"
+            android:textSize="24sp" android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginRight="8dp" app:layout_constraintHorizontal_bias="0.032"/>
+    <Button
+            android:text="@string/y_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Yellow_on" android:textSize="36sp"
+            android:background="@android:color/holo_orange_light" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.336"
+            android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginRight="8dp" app:layout_constraintHorizontal_bias="0.781"/>
+    <Button
+            android:text="@string/y_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Yellow_off" android:textSize="36sp"
+            android:background="@android:color/darker_gray" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            app:layout_constraintHorizontal_bias="0.781" app:layout_constraintVertical_bias="0.444"/>
+    <EditText
+
+            android:background="@null"
+            android:layout_width="157dp"
+            android:layout_height="57dp"
+            android:inputType="textPersonName"
+            android:text="@string/yellow_led"
+            android:ems="10"
+            android:id="@+id/Yellow"
+            app:layout_constraintStart_toStartOf="@+id/Yellow_on" app:layout_constraintEnd_toEndOf="@+id/Yellow_on"
+            app:layout_constraintTop_toTopOf="@+id/Green" android:gravity="center"
+            app:layout_constraintHorizontal_bias="0.478" app:layout_constraintVertical_bias="0.0"
+            android:textSize="24sp" app:layout_constraintBottom_toBottomOf="@+id/Green"/>
+
+</android.support.constraint.ConstraintLayout>
